@@ -10,6 +10,14 @@
       type="image/x-icon"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -21,13 +29,17 @@
           </div>
 
           <nav class="nav-menu">
-            <ul>
+            <ul id="menuList">
               <li><a href="#">Categoria 1</a></li>
               <li><a href="#">Categoria 2</a></li>
               <li><a href="#">Categoria 3</a></li>
               <li><a href="#">Categoria 4</a></li>
             </ul>
           </nav>
+
+          <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+          </div>
         </div>
 
         <div class="box-text">
@@ -38,13 +50,14 @@
             provident, sequi quas impedit, s! Provident cupiditate ipsam porro
             tempore quibusdam!
           </p>
-        
+
           <div class="scroll">
-            <img src="./assets/img/Scroll.svg" alt="Scrolle a página">
+            <img src="./assets/img/Scroll.svg" alt="Scrolle a página" />
           </div>
-          
         </div>
       </div>
     </header>
   </body>
+
+  <script src="./script.js"></script>
 </html>
