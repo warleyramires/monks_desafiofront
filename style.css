@@ -75,42 +75,43 @@ header .header-page .box-text .scroll{
   padding-block: 14px;
 }
 
-
 @media (max-width: 720px) {
+    header {
+        border-radius: 0 0 0 0;
+    }
+
     header .header-page {
         background-image: url('./assets/img/Image_responsive.svg');
-        
+        background-size: contain;
     }
 
     header .header-page .box-text {
-        max-width: 390px;
-        border: 1px solid blue;
+        max-width: 290px;
     }
 
     header .header-page .box-text h1 {
-      font-size: 26px; 
+        font-size: 26px; 
     }
   
     header .header-page .box-text p {
-      font-size: 16px;
+        font-size: 16px;
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     header .header-page {
         background-image: url('./assets/img/Image_responsive.svg');
     }
 
     header .header-page .box-text {
         max-width: 190px;
-        border: 1px solid blue;
     }
 
     header .header-page .box-text h1 {
         font-size: 26px; 
-      }
+    }
     
-      header .header-page .box-text p {
+    header .header-page .box-text p {
         font-size: 16px;
-      }  
-  }
+    }  
+}
