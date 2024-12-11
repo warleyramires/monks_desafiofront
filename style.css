@@ -29,7 +29,7 @@ header .header-page {
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
-  height: auto;
+  height: 460px;
 }
 
 header .box-menu {
@@ -46,6 +46,9 @@ header .box-menu .menu-icon {
   display: none;
   cursor: pointer;
   margin-left: -30px;
+}
+header .box-menu .logo {
+  margin-top: 14px;
 }
 
 header .box-menu .menu-icon i {
@@ -87,14 +90,98 @@ header .header-page .box-text .scroll {
   padding-block: 14px;
 }
 
+main {
+  padding-block: 50px;
+}
+
+main .turismo {
+  display: flex;
+  flex-direction: column;
+}
+main .turismo .box-info h2 {
+  font-size: 54px;
+  color: #2d2d2d;
+}
+main .turismo .box-info p {
+  font-size: 24px;
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+
+main .turismo .box-images-locais {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+main .turismo .box-images-locais .box-image-info {
+  background-color: #fff;
+  height: 410px;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main .turismo .box-images-locais .box-image-info:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+main .turismo .box-images-locais .box-image-info h3 {
+  color: #2d2d2d;
+  font-size: 24px;
+  padding: 10px;
+}
+main .turismo .box-images-locais .box-image-info p {
+  color: #2d2d2d;
+  font-size: 18px;
+  padding-inline: 10px;
+  max-width: 400px;
+  line-height: 28px;
+}
+
+main .turismo .box-images-locais .box-image-info img {
+  width: 414px;
+  object-fit: cover;
+}
+
+@media (max-width: 1334px) {
+  main .turismo .box-images-locais .box-image-info {
+    width: 45vw;
+    height: auto;
+  }
+
+  main .turismo .box-images-locais .box-image-info img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
 @media (max-width: 720px) {
   header {
     border-radius: 0 0 0 0;
   }
 
+  main .turismo .box-images-locais .box-image-info {
+    width: 90vw;
+    height: auto;
+
+  }
+
+  main .turismo .box-images-locais .box-image-info img {
+    width: 100%;
+    object-fit: cover;
+  }
+
   header .header-page {
     background-image: url("./assets/img/Image_responsive.svg");
     background-size: contain;
+  }
+
+  header .box-menu .logo {
+    margin-top: 0;
   }
 
   header .header-page .box-menu .nav-menu ul {
@@ -117,8 +204,6 @@ header .header-page .box-text .scroll {
     color: #2d2d2d;
     font-size: 18px;
     font-weight: bold;
-  }
-  header .header-page .box-menu .nav-menu ul li {
   }
 
   header .box-menu .menu-icon {

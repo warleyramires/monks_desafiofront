@@ -17,7 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <link rel="stylesheet" href="modalstyle.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -57,6 +57,53 @@
         </div>
       </div>
     </header>
+
+    <main>
+      <section class="width-page turismo">
+        <div class="box-info">
+          <h2>Lorem impsum dolor sit amet consectetur</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptate. Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+
+        <div class="box-images-locais">
+          <div class="box-image-info">
+            <img src="./assets/img/img1.svg" alt="Montanha">
+            <h3>Lorem impsun dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="box-image-info">
+            <img src="./assets/img/img2.svg" alt="Prédio">
+            <h3>Lorem impsun dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="box-image-info">
+            <img src="./assets/img/img3.svg" alt="Montanha">
+            <h3>Lorem impsun dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="box-image-info">
+            <img src="./assets/img/img4.svg" alt="Pontos Turisticos">
+            <h3>Lorem impsun dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img id="modal-image" src="" alt="Imagem">
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+      </div>
+    </div>
   </body>
 
   <script src="./script.js"></script>
