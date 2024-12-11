@@ -13,7 +13,7 @@ body {
 }
 
 .width-page {
-  max-width: 1800px;
+  max-width: 1360px;
   margin: 0 auto;
   padding-inline: 24px;
   width: 100%;
@@ -140,12 +140,12 @@ main .turismo .box-images-locais .box-image-info p {
   color: #2d2d2d;
   font-size: 18px;
   padding-inline: 10px;
-  max-width: 400px;
+  max-width: 300px;
   line-height: 28px;
 }
 
 main .turismo .box-images-locais .box-image-info img {
-  width: 414px;
+  width: 300px;
   object-fit: cover;
 }
 
@@ -225,25 +225,25 @@ main .downloads .box-downloads {
 }
 
 main .downloads .box-text-downloads {
-  max-width: 1000px;
+  max-width: 860px;
 }
 
 main .downloads .box-text-downloads h2 {
-  font-size: 34px;
+  font-size: 40px;
   color: #eae8e4;
   margin-bottom: 10px;
 }
 
 main .downloads .box-text-downloads p {
-  font-size: 24px;
+  font-size: 20px;
   color: #eae8e4;
 }
 
 .buttons-downloads {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   gap: 20px;
-  align-items: center; 
+  align-items: center;
 }
 
 .btn-download {
@@ -265,15 +265,105 @@ main .downloads .box-text-downloads p {
 
 .btn-download span {
   display: flex;
-  flex-direction: column; 
-  text-align: left; 
+  flex-direction: column;
+  text-align: left;
 }
 
 .btn-download strong {
-  font-weight: bold; 
+  font-weight: bold;
 }
 
-@media (max-width: 1334px) {
+main .brindes {
+  margin-block: 60px;
+}
+
+main .brindes .box-content h2 {
+  font-size: 54px;
+  color: #2d2d2d;
+}
+
+main .brindes .box-content .products {
+  max-width: 900px;
+  margin: 20px auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+main .brindes .box-content .products a {
+  background-color: #dfdcd5;
+  border: 2px solid #7d26c9;
+  border-radius: 25px;
+  color: #7d26c9;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+main .brindes .box-content .products a:hover {
+  transform: scale(1.05);
+}
+
+main .brindes .box-content .box-brindes-descripion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+main .brindes .box-content .box-brindes-descripion .box-text-descripion {
+  width: 31%;
+  border: 2px solid #dfbbfe;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+main .brindes .box-content .box-brindes-descripion .box-text-descripion h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+main .brindes .box-content .box-brindes-descripion .box-text-descripion p {
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+main .brindes .box-content .box-brindes-descripion .box-text-descripion a {
+  text-align: center;
+  background-color: #dfbbfe;
+  padding: 8px 40px;
+  border-radius: 5px;
+  align-self: center;
+}
+
+@media (max-width: 1265px) {
+  main .downloads .box-downloads {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .buttons-downloads {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-download {
+    width: 100%;
+  }
+  main .downloads .box-text-downloads p {
+    margin-bottom: 1px;
+  }
+}
+
+@media (max-width: 968px) {
   main .turismo .box-images-locais .box-image-info {
     width: 45vw;
     height: auto;
@@ -298,29 +388,6 @@ main .downloads .box-text-downloads p {
   .image3 {
     width: 100%;
   }
-}
-
-@media (max-width: 1140px){
-  main .downloads .box-downloads {
-   
-    margin-top: 20px;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-  }
-
-  .buttons-downloads {
-    flex-direction: column; 
-    align-items: center;
-    
-  }
-  .btn-download{
-    width: 100%;
-  }
-  main .downloads .box-text-downloads p {
-    margin-bottom: 1px;
-  }
-
 }
 
 @media (max-width: 720px) {
@@ -388,6 +455,21 @@ main .downloads .box-text-downloads p {
   header .header-page .box-text p {
     font-size: 16px;
   }
+  main .brindes .box-content .products {
+    justify-content: flex-start;
+  }
+  main .brindes .box-content .products a {
+    width: 45%;
+  }
+  main .brindes .box-content .box-brindes-descripion {
+    flex-direction: column;
+    margin-bottom: 14px;
+  }
+  main .brindes .box-content .box-brindes-descripion .box-text-descripion {
+    width: 100%;
+
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -405,5 +487,8 @@ main .downloads .box-text-downloads p {
 
   header .header-page .box-text p {
     font-size: 16px;
+  }
+  main .brindes .box-content .products.products a {
+    width: 100%;
   }
 }
