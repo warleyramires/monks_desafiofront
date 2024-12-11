@@ -167,8 +167,7 @@ main .viagens {
     "image1 image1 image2 image2"
     "image1 image1 image3 image3"
     "image1 image1 image3 image3";
-
-  border: 1px solido orange;
+  margin-bottom: 40px;
 }
 
 main .viagens .box-text-viagens {
@@ -211,6 +210,69 @@ main .viagens img {
   border-radius: 20px;
 }
 
+main .downloads {
+  background-color: #3c0c60;
+  border-radius: 20px;
+  width: 94%;
+}
+
+main .downloads .box-downloads {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 24px;
+}
+
+main .downloads .box-text-downloads {
+  max-width: 1000px;
+}
+
+main .downloads .box-text-downloads h2 {
+  font-size: 34px;
+  color: #eae8e4;
+  margin-bottom: 10px;
+}
+
+main .downloads .box-text-downloads p {
+  font-size: 24px;
+  color: #eae8e4;
+}
+
+.buttons-downloads {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+  align-items: center; 
+}
+
+.btn-download {
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 22px;
+  border: none;
+}
+
+.btn-download i {
+  margin-right: 10px;
+  font-size: 45px;
+}
+
+.btn-download span {
+  display: flex;
+  flex-direction: column; 
+  text-align: left; 
+}
+
+.btn-download strong {
+  font-weight: bold; 
+}
+
 @media (max-width: 1334px) {
   main .turismo .box-images-locais .box-image-info {
     width: 45vw;
@@ -236,6 +298,29 @@ main .viagens img {
   .image3 {
     width: 100%;
   }
+}
+
+@media (max-width: 1140px){
+  main .downloads .box-downloads {
+   
+    margin-top: 20px;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+  }
+
+  .buttons-downloads {
+    flex-direction: column; 
+    align-items: center;
+    
+  }
+  .btn-download{
+    width: 100%;
+  }
+  main .downloads .box-text-downloads p {
+    margin-bottom: 1px;
+  }
+
 }
 
 @media (max-width: 720px) {
