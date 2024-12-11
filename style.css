@@ -91,12 +91,13 @@ header .header-page .box-text .scroll {
 }
 
 main {
-  padding-block: 50px;
+  padding-block: 10px;
 }
 
 main .turismo {
   display: flex;
   flex-direction: column;
+  padding-block: 40px;
 }
 main .turismo .box-info h2 {
   font-size: 54px;
@@ -106,6 +107,7 @@ main .turismo .box-info p {
   font-size: 24px;
   margin-top: 12px;
   margin-bottom: 40px;
+  color: #2d2d2d;
 }
 
 main .turismo .box-images-locais {
@@ -147,6 +149,68 @@ main .turismo .box-images-locais .box-image-info img {
   object-fit: cover;
 }
 
+main .viagens .box-text-viagens h2 {
+  font-size: 54px;
+  color: #2d2d2d;
+}
+main .viagens .box-text-viagens p {
+  font-size: 24px;
+  padding-block: 18px;
+  color: #2d2d2d;
+}
+
+main .viagens {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "texto texto image2 image2"
+    "image1 image1 image2 image2"
+    "image1 image1 image3 image3"
+    "image1 image1 image3 image3";
+
+  border: 1px solido orange;
+}
+
+main .viagens .box-text-viagens {
+  grid-area: texto;
+}
+
+main .viagens .image1,
+main .viagens .image2,
+main .viagens .image3 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+main .viagens .image1 {
+  grid-area: image1;
+}
+
+main .viagens .image2 {
+  grid-area: image2;
+  width: 100%;
+}
+
+main .viagens .image3 {
+  grid-area: image3;
+  width: 100%;
+}
+
+main .viagens img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+}
+.image1:hover img,
+.image2:hover img,
+.image3:hover img {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
 @media (max-width: 1334px) {
   main .turismo .box-images-locais .box-image-info {
     width: 45vw;
@@ -156,6 +220,21 @@ main .turismo .box-images-locais .box-image-info img {
   main .turismo .box-images-locais .box-image-info img {
     width: 100%;
     object-fit: cover;
+  }
+
+  main .viagens {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "texto"
+      "image1"
+      "image2"
+      "image3";
+  }
+
+  .image1,
+  .image2,
+  .image3 {
+    width: 100%;
   }
 }
 
@@ -167,7 +246,6 @@ main .turismo .box-images-locais .box-image-info img {
   main .turismo .box-images-locais .box-image-info {
     width: 90vw;
     height: auto;
-
   }
 
   main .turismo .box-images-locais .box-image-info img {
