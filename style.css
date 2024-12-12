@@ -343,6 +343,113 @@ main .brindes .box-content .box-brindes-descripion .box-text-descripion a {
   align-self: center;
 }
 
+main .formulario{
+  background-color: #2d2d2d;
+  padding-block: 60px;
+}
+
+main .formulario .secao-formulario .imagem-contato{
+  background-image: url('./assets/img/fale-conosco.svg');
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+
+main .formulario .secao-formulario{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dfbbfe;
+  padding-bottom: 60px;
+  gap: 30px;
+ 
+}
+
+main .formulario .secao-formulario .box-formulario{
+width:180vw;
+background-color: #eae8e4;
+border-radius: 20px;
+padding: 30px;
+
+}
+
+main .formulario .secao-formulario .box-formulario h3{
+  font-size: 36px;
+  color: #2d2d2d;
+  margin-bottom: 10px;
+}
+
+main .formulario .secao-formulario .box-formulario p{
+  font-size: 22px;
+  color: #2d2d2d;
+  margin-bottom: 10px;
+}
+
+main .formulario .secao-formulario .box-formulario strong{
+  font-size: 14px;
+  color: #2d2d2d;
+
+}
+
+main .formulario .secao-formulario .box-formulario .form-contato .inputs{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px; 
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+main .formulario .secao-formulario .box-formulario .form-contato .inputs input,
+main .formulario .secao-formulario .box-formulario .form-contato .box-verificacao input{
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+}
+
+main .formulario .secao-formulario .box-formulario .form-contato button{
+  padding: 10px 50px;
+  border: none;
+  background-color: #dfbbfe;
+  border-radius: 7px;
+  color: #8b898b;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+main .formulario .secao-formulario .box-formulario .form-contato .container-resultado .box-verificacao{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .formulario .secao-formulario .box-formulario .form-contato .container-resultado .box-verificacao .soma{
+  display: flex;
+  padding-inline: 20px;
+  gap: 20px;
+  border-radius: 7px;
+  background-color: #dfdcd5;  
+}
+main .formulario .secao-formulario .box-formulario .form-contato .container-resultado .box-verificacao .soma .num{
+  color: #7d26c9;
+  font-weight: bold;
+}
+main .formulario .secao-formulario .box-formulario .form-contato .container-resultado .box-verificacao .soma p{
+  margin-top: 10px;
+}
+
+main .formulario .secao-formulario .box-formulario .form-contato h4{
+  font-size: 24px;
+  color: #2d2d2d;
+
+}
+
+footer{
+  background-color: #2d2d2d;
+}
+
 @media (max-width: 1265px) {
   main .downloads .box-downloads {
     margin-top: 20px;
@@ -361,6 +468,16 @@ main .brindes .box-content .box-brindes-descripion .box-text-descripion a {
   main .downloads .box-text-downloads p {
     margin-bottom: 1px;
   }
+  main .formulario .secao-formulario{
+    flex-direction: column;
+  }
+  main .formulario .secao-formulario .box-formulario{
+    width: 70vw;
+  }
+  
+main .formulario .secao-formulario .imagem-contato{
+  width: 314px;
+}
 }
 
 @media (max-width: 968px) {
@@ -387,6 +504,12 @@ main .brindes .box-content .box-brindes-descripion .box-text-descripion a {
   .image2,
   .image3 {
     width: 100%;
+  }
+
+  .container-resultado{
+    border: 2px solid blue;
+    display: flex;
+   flex-direction: column;
   }
 }
 
@@ -469,6 +592,10 @@ main .brindes .box-content .box-brindes-descripion .box-text-descripion a {
     width: 100%;
 
     margin-bottom: 10px;
+  }
+
+  main .formulario .secao-formulario .box-formulario .form-contato .inputs{
+    grid-template-columns: 1fr;
   }
 }
 

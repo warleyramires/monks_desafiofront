@@ -31,3 +31,38 @@ function openModal(imageSrc, title, description) {
     });
   });
   
+
+  const form = document.getElementById('form-contato')
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault()
+
+    const nome = document.getElementById("nome").value;
+    const sobrenome = document.getElementById("sobrenome").value;
+    const email = document.getElementById("email").value;
+    const telefone = document.getElementById("telefone").value;
+
+    const inputResultado = document.getElementById("resultado").value
+    const resultado = parseInt(inputResultado)
+
+    const tagNum1 = document.getElementById("num1")
+    const tagNum2 = document.getElementById("num2")
+    console.log(tagNum1, tagNum1);
+    const num1 = parseInt(tagNum1.innerText);
+    const num2 = parseInt(tagNum2.innerText);
+    
+    console.log(nome, sobrenome, email, telefone, typeof(resultado));
+    console.log(num1, num2);
+    verificaResultado(num1, num2, resultado)
+    
+
+  })
+
+
+  function verificaResultado(num1, num2, resultado){
+    if(num1+num2 === resultado){
+      console.log(`O resultado está certo: ${num1+num2}`)
+    }else{
+      console.log("Tente novamente")
+    }
+  }
