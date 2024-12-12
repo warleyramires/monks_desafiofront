@@ -418,6 +418,7 @@ main .formulario .secao-formulario .box-formulario .form-contato button{
   font-weight: bold;
   cursor: pointer;
   margin-top: 40px;
+  text-align: center;
 }
 
 main .formulario .secao-formulario .box-formulario .form-contato .container-resultado .box-verificacao{
@@ -443,7 +444,6 @@ main .formulario .secao-formulario .box-formulario .form-contato .container-resu
 main .formulario .secao-formulario .box-formulario .form-contato h4{
   font-size: 24px;
   color: #2d2d2d;
-
 }
 
 footer{
@@ -507,7 +507,6 @@ main .formulario .secao-formulario .imagem-contato{
   }
 
   .container-resultado{
-    border: 2px solid blue;
     display: flex;
    flex-direction: column;
   }
@@ -596,6 +595,19 @@ main .formulario .secao-formulario .imagem-contato{
 
   main .formulario .secao-formulario .box-formulario .form-contato .inputs{
     grid-template-columns: 1fr;
+  }
+
+  main .formulario .secao-formulario .box-formulario .form-contato .container-resultado .box-verificacao {
+    flex-direction: column;
+    gap: 20px; 
+  }
+
+  main .formulario .secao-formulario .box-formulario .form-contato .container-resultado .box-verificacao .soma {
+    justify-content: center;
+  }
+
+  main .formulario .secao-formulario .box-formulario .form-contato .container-resultado .box-verificacao input[type="text"] {
+    margin-top: 10px;
   }
 }
 

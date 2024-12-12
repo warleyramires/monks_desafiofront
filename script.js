@@ -53,16 +53,31 @@ function openModal(imageSrc, title, description) {
     
     console.log(nome, sobrenome, email, telefone, typeof(resultado));
     console.log(num1, num2);
-    verificaResultado(num1, num2, resultado)
-    
+    let booleanResult = verificaResultado(num1, num2, resultado)
+    console.log(booleanResult)
+
+    if(!booleanResult){
+      trocaNumeros(tagNum1, tagNum2)
+    }else{
+      console.log("não faz nada")
+    }
 
   })
 
 
   function verificaResultado(num1, num2, resultado){
     if(num1+num2 === resultado){
-      console.log(`O resultado está certo: ${num1+num2}`)
+      return true
     }else{
-      console.log("Tente novamente")
+      return false;
     }
+  }
+
+  function trocaNumeros(tagNum1, tagNum2){
+
+    var novoNumero1 = Math.floor(Math.random() * 999) + 1;
+    var novoNumero2 = Math.floor(Math.random() * 999) + 1;
+
+    tagNum1.innerText = novoNumero1;
+    tagNum2.innerText = novoNumero2;
   }
