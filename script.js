@@ -36,9 +36,9 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
 
   const nomeInput = document.getElementById("nome");
-  const sobrenomeInput  = document.getElementById("sobrenome").value;
-  const emailInput  = document.getElementById("email").value;
-  const telefoneInput  = document.getElementById("telefone").value;
+  const sobrenomeInput  = document.getElementById("sobrenome");
+  const emailInput  = document.getElementById("email");
+  const telefoneInput  = document.getElementById("telefone");
   const inputResultado = document.getElementById("resultado");
   const resultado = parseInt(inputResultado.value);
   const tagNum1 = document.getElementById("num1");
@@ -63,6 +63,8 @@ form.addEventListener("submit", function (e) {
     inputResultado.style.backgroundColor = "#ff95003f";
   } else {
     showSuccessModal();
+    salvaPessoa(nome, sobrenome, email, telefone)
+    limpaCampos(nomeInput, sobrenomeInput, emailInput, telefoneInput, inputResultado)
   }
 });
 
@@ -90,4 +92,24 @@ function showSuccessModal() {
 function closeSuccessModal() {
   const modal = document.getElementById("success-modal");
   modal.style.display = "none";
+}
+
+function salvaPessoa(nome, sobrenome, email, telefone){
+  const pessoa = {
+    nome: nome,
+    sobrenome: sobrenome,
+    email: email,
+    telefone: telefone,
+  }
+  console.log(pessoa);
+}
+
+function limpaCampos(nomeInput, sobrenomeInput, emailInput, telefoneInput, inputResultado){
+  nomeInput.value = ""; 
+  sobrenomeInput.value = "";
+  emailInput.value = ""; 
+  telefoneInput.value = "";  
+  inputResultado.value = ""; 
+  inputResultado.style.border = "none";
+  inputResultado.style.backgroundColor = "#fff";
 }
