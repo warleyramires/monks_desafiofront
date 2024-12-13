@@ -32,13 +32,22 @@ cards.forEach((card) => {
 });
 
 const form = document.getElementById("form-contato");
+const telefoneInput = document.getElementById("telefone");
+telefoneInput.addEventListener("input", function (e) {
+  let value = e.target.value.replace(/\D/g, "");
+  value = value.replace(/^(\d{2})(\d)/, "($1)$2"); 
+  value = value.replace(/(\d{5})(\d)/, "$1-$2");
+  value = value.slice(0, 14);
+  e.target.value = value;
+});
+
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
   const nomeInput = document.getElementById("nome");
   const sobrenomeInput  = document.getElementById("sobrenome");
   const emailInput  = document.getElementById("email");
-  const telefoneInput  = document.getElementById("telefone");
+ 
   const inputResultado = document.getElementById("resultado");
   const resultado = parseInt(inputResultado.value);
   const tagNum1 = document.getElementById("num1");
