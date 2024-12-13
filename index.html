@@ -18,6 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="modalstyle.css" />
+    <link rel="stylesheet" href="modalformstyle.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -252,14 +253,23 @@
       </div>
     </footer>
 
-    <div id="modal" class="modal">
-      <div class="modal-content">
+    <div id="modal-cards" class="modal-turismo">
+      <div class="modal-content-turismo">
         <span class="close-btn" onclick="closeModal()">&times;</span>
         <img id="modal-image" src="" alt="Imagem" />
         <h3 id="modal-title"></h3>
         <p id="modal-description"></p>
       </div>
     </div>    
+
+    <div id="success-modal" class="modal-form">
+      <div class="modal-content-form">
+        <h2>Sucesso!</h2>
+        <p>Obrigado por nos escolher. Entraremos em contato em breve.</p>
+        <button onclick="closeSuccessModal()">Fechar</button>
+      </div>
+    </div>
+    
 
   </body>
 

@@ -1,4 +1,4 @@
-.modal {
+.modal-turismo {
     display: none;
     position: fixed;
     top: 0;
@@ -10,7 +10,7 @@
     align-items: center;
   }
   
-  .modal-content {
+  .modal-content-turismo {
     background: white;
     border-radius: 20px;
     padding: 20px;
@@ -20,17 +20,17 @@
     height: auto;
   }
   
-  .modal-content img {
+  .modal-content-turismo img {
     width: 50vw;
     border-radius: 10px;
   }
   
-  .modal-content h3 {
+  .modal-content-turismo h3 {
     margin-top: 10px;
     font-size: 24px;
   }
   
-  .modal-content p {
+  .modal-content-turismo p {
     margin-top: 10px;
     font-size: 18px;
     color: #333;
