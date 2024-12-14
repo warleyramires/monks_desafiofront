@@ -1,3 +1,16 @@
+:root {
+  --color-body-bg: #eae8e4;
+  --color-header-bg: #2d2d2d;
+  --color-header-text: #eae8e4;
+  --color-text-secondary: #8b898b;
+  --color-primary: #dfbbfe;
+  --color-downloads-bg: #3c0c60;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-highlight: #7d26c9;
+  --color-brindes-bg: #dfdcd5;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +22,7 @@
 }
 
 body {
-  background-color: #eae8e4;
+  background-color: var(--color-body-bg);
 }
 
 .width-page {
@@ -20,8 +33,8 @@ body {
 }
 
 header {
-  background-color: #2d2d2d;
-  color: #eae8e4;
+  background-color: var(--color-header-bg);
+  color: var(--color-header-text);
   border-radius: 0 0 30px 30px;
 }
 header .header-page {
@@ -52,7 +65,7 @@ header .box-menu .logo {
 }
 
 header .box-menu .menu-icon i {
-  color: #eae8e4;
+  color: var(--color-header-text);
   font-size: 30px;
 }
 
@@ -63,7 +76,7 @@ header .header-page .box-menu .nav-menu ul {
 }
 
 header .header-page .box-menu .nav-menu li a {
-  color: #eae8e4;
+  color: var(--color-header-text);
 }
 
 header .header-page .box-text {
@@ -78,7 +91,7 @@ header .header-page .box-text h1 {
 }
 
 header .header-page .box-text p {
-  color: #8b898b;
+  color: var(--color-text-secondary);
   font-size: 18px;
   max-width: 500px;
   margin-block: 16px;
@@ -89,10 +102,6 @@ header .header-page .box-text .scroll {
   text-align: center;
   padding-block: 14px;
 }
-
-/* main {
-  padding-block: 10px;
-} */
 
 footer .box-rodape{
   display: flex;
@@ -107,13 +116,13 @@ main .turismo {
 }
 main .turismo .box-info h2 {
   font-size: 54px;
-  color: #2d2d2d;
+  color: var(--color-header-bg);
 }
 main .turismo .box-info p {
   font-size: 24px;
   margin-top: 12px;
   margin-bottom: 40px;
-  color: #2d2d2d;
+  color: var(--color-header-bg);
 }
 
 main .turismo .box-images-locais {
@@ -124,7 +133,7 @@ main .turismo .box-images-locais {
 }
 
 main .turismo .box-images-locais .box-image-info {
-  background-color: #fff;
+  background-color: var(--color-white);
   height: 410px;
   border-radius: 10px;
   padding: 5px;
@@ -134,16 +143,16 @@ main .turismo .box-images-locais .box-image-info {
 
 main .turismo .box-images-locais .box-image-info:hover {
   transform: scale(1.05);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 20px #00000033;
 }
 
 main .turismo .box-images-locais .box-image-info h3 {
-  color: #2d2d2d;
+  color: var(--color-header-bg);
   font-size: 24px;
   padding: 10px;
 }
 main .turismo .box-images-locais .box-image-info p {
-  color: #2d2d2d;
+  color: var(--color-header-bg);
   font-size: 18px;
   padding-inline: 10px;
   max-width: 300px;
@@ -157,12 +166,12 @@ main .turismo .box-images-locais .box-image-info img {
 
 main .viagens .box-text-viagens h2 {
   font-size: 54px;
-  color: #2d2d2d;
+  color: var(--color-header-bg);
 }
 main .viagens .box-text-viagens p {
   font-size: 24px;
   padding-block: 18px;
-  color: #2d2d2d;
+  color: var(--color-header-bg);
 }
 
 main .viagens {
@@ -217,7 +226,7 @@ main .viagens img {
 }
 
 main .downloads {
-  background-color: #3c0c60;
+  background-color: var(--color-downloads-bg);
   border-radius: 20px;
   width: 94%;
 }
@@ -236,13 +245,13 @@ main .downloads .box-text-downloads {
 
 main .downloads .box-text-downloads h2 {
   font-size: 40px;
-  color: #eae8e4;
+  color: var(--color-header-text);
   margin-bottom: 10px;
 }
 
 main .downloads .box-text-downloads p {
   font-size: 20px;
-  color: #eae8e4;
+  color: var(--color-header-text);
 }
 
 .buttons-downloads {
@@ -256,8 +265,8 @@ main .downloads .box-text-downloads p {
   display: flex;
   align-items: center;
   padding: 10px 40px;
-  background-color: #000;
-  color: #fff;
+  background-color: var(--color-black);
+  color: var(--color-white);
   border-radius: 10px;
   cursor: pointer;
   font-size: 22px;
@@ -301,10 +310,10 @@ main .brindes .box-content .products {
 }
 
 main .brindes .box-content .products a {
-  background-color: #dfdcd5;
-  border: 2px solid #7d26c9;
+  background-color: var(--color-brindes-bg);
+  border: 2px solid var(--color-highlight);
   border-radius: 25px;
-  color: #7d26c9;
+  color: var(--color-highlight);
   text-align: center;
   padding: 10px 15px;
   font-size: 20px;
@@ -324,8 +333,8 @@ main .brindes .box-content .box-brindes-descripion {
 }
 main .brindes .box-content .box-brindes-descripion .box-text-descripion {
   width: 31%;
-  border: 2px solid #dfbbfe;
-  background-color: #fff;
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-white);
   padding: 20px;
   border-radius: 15px;
   align-items: flex-start;
@@ -343,10 +352,19 @@ main .brindes .box-content .box-brindes-descripion .box-text-descripion p {
 }
 main .brindes .box-content .box-brindes-descripion .box-text-descripion a {
   text-align: center;
-  background-color: #dfbbfe;
+  background-color: var(--color-primary);
+  color: #2d2d2d;
   padding: 8px 40px;
   border-radius: 5px;
   align-self: center;
+  transition: all 0.3s ease;
+}
+
+main .brindes .box-content .box-brindes-descripion .box-text-descripion a:hover {
+  background-color: #be90f5;
+  color: var(--color-white);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0px 4px 10px #be90f566; 
 }
 
 main .formulario{
@@ -367,7 +385,7 @@ main .formulario .secao-formulario{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #dfbbfe;
+  border-bottom: 1px solid var(--color-primary);
   padding-bottom: 60px;
   gap: 30px;
  
@@ -375,7 +393,7 @@ main .formulario .secao-formulario{
 
 main .formulario .secao-formulario .box-formulario{
 width:180vw;
-background-color: #eae8e4;
+background-color: var(--color-brindes-bg);
 border-radius: 20px;
 padding: 30px;
 
@@ -418,13 +436,21 @@ main .formulario .secao-formulario .box-formulario .form-contato .box-verificaca
 main .formulario .secao-formulario .box-formulario .form-contato button{
   padding: 10px 50px;
   border: none;
-  background-color: #dfbbfe;
+  background-color: var(--color-primary);
   border-radius: 7px;
-  color: #8b898b;
+  color: #353335;
   font-weight: bold;
   cursor: pointer;
   margin-top: 40px;
   text-align: center;
+  transition: all 0.3s ease;
+}
+
+main .formulario .secao-formulario .box-formulario .form-contato button:hover {
+  background-color: #be90f5;
+  color: var(--color-white); 
+  transform: scale(1.1); 
+  box-shadow: 0px 4px 15px #be90f566;
 }
 
 main .formulario .secao-formulario .box-formulario .form-contato .container-resultado .box-verificacao{
@@ -437,10 +463,10 @@ main .formulario .secao-formulario .box-formulario .form-contato .container-resu
   padding-inline: 20px;
   gap: 20px;
   border-radius: 7px;
-  background-color: #dfdcd5;  
+  background-color: var(--color-brindes-bg);  
 }
 main .formulario .secao-formulario .box-formulario .form-contato .container-resultado .box-verificacao .soma .num{
-  color: #7d26c9;
+  color: var(--color-highlight);
   font-weight: bold;
 }
 main .formulario .secao-formulario .box-formulario .form-contato .container-resultado .box-verificacao .soma p{
@@ -482,189 +508,3 @@ footer .box-rodape .nav-rodape ul li a{
   color: #eae8e4;
 }
 
-@media (max-width: 1265px) {
-  main .downloads .box-downloads {
-    margin-top: 20px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .buttons-downloads {
-    flex-direction: column;
-    align-items: center;
-  }
-  .btn-download {
-    width: 100%;
-  }
-  main .downloads .box-text-downloads p {
-    margin-bottom: 1px;
-  }
-  main .formulario .secao-formulario{
-    flex-direction: column;
-  }
-  main .formulario .secao-formulario .box-formulario{
-    width: 70vw;
-  }
-  
-main .formulario .secao-formulario .imagem-contato{
-  width: 314px;
-}
-}
-
-@media (max-width: 968px) {
-  main .turismo .box-images-locais .box-image-info {
-    width: 45vw;
-    height: auto;
-  }
-
-  main .turismo .box-images-locais .box-image-info img {
-    width: 100%;
-    object-fit: cover;
-  }
-
-  main .viagens {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "texto"
-      "image1"
-      "image2"
-      "image3";
-  }
-
-  .image1,
-  .image2,
-  .image3 {
-    width: 100%;
-  }
-
-  .container-resultado{
-    display: flex;
-   flex-direction: column;
-  }
-}
-
-@media (max-width: 720px) {
-  header {
-    border-radius: 0 0 0 0;
-  }
-
-  main .turismo .box-images-locais .box-image-info {
-    width: 90vw;
-    height: auto;
-  }
-
-  main .turismo .box-images-locais .box-image-info img {
-    width: 100%;
-    object-fit: cover;
-  }
-
-  header .header-page {
-    background-image: url("./assets/img/Image_responsive.svg");
-    background-size: contain;
-  }
-
-  header .box-menu .logo {
-    margin-top: 0;
-  }
-
-  header .header-page .box-menu .nav-menu ul {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    background-color: #dfbbfe;
-    overflow: hidden;
-    height: 100vh;
-    align-items: center;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    padding: 0;
-    margin: 0;
-  }
-  header .header-page .box-menu .nav-menu ul li a {
-    color: #2d2d2d;
-    font-size: 18px;
-    font-weight: bold;
-  }
-
-  header .box-menu .menu-icon {
-    display: block;
-  }
-
-  #menuList {
-    transition: all 0.5s;
-  }
-
-  header .header-page .box-text {
-    max-width: 290px;
-  }
-
-  header .header-page .box-text h1 {
-    font-size: 26px;
-  }
-
-  header .header-page .box-text p {
-    font-size: 16px;
-  }
-  main .brindes .box-content .products {
-    justify-content: flex-start;
-  }
-  main .brindes .box-content .products a {
-    width: 45%;
-  }
-  main .brindes .box-content .box-brindes-descripion {
-    flex-direction: column;
-    margin-bottom: 14px;
-  }
-  main .brindes .box-content .box-brindes-descripion .box-text-descripion {
-    width: 100%;
-
-    margin-bottom: 10px;
-  }
-
-  main .formulario .secao-formulario .box-formulario .form-contato .inputs{
-    grid-template-columns: 1fr;
-  }
-
-  main .formulario .secao-formulario .box-formulario .form-contato .container-resultado .box-verificacao {
-    flex-direction: column;
-    gap: 20px; 
-  }
-
-  main .formulario .secao-formulario .box-formulario .form-contato .container-resultado .box-verificacao .soma {
-    justify-content: center;
-  }
-
-  main .formulario .secao-formulario .box-formulario .form-contato .container-resultado .box-verificacao input[type="text"] {
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  header .header-page {
-    background-image: url("./assets/img/Image_responsive.svg");
-  }
-
-  header .header-page .box-text {
-    max-width: 190px;
-  }
-
-  header .header-page .box-text h1 {
-    font-size: 26px;
-  }
-
-  header .header-page .box-text p {
-    font-size: 16px;
-  }
-  main .brindes .box-content .products.products a {
-    width: 100%;
-  }
-  footer .box-rodape .nav-rodape ul {
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    text-align: center; /* Garante alinhamento central em textos */
-  }
-
-}
