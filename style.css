@@ -26,14 +26,14 @@ body {
   background-color: var(--color-body-bg);
 }
 
-.view-scroll{
-  transform:  translateY(20px);
+.view-scroll {
+  transform: translateY(20px);
   opacity: 0;
   transition: 1s ease;
 }
 
-.view-scroll-visible{
-  transform:  translateY(0);
+.view-scroll-visible {
+  transform: translateY(0);
   opacity: 1;
 }
 
@@ -41,12 +41,8 @@ body {
   max-width: 1360px;
   margin: 0 auto;
   padding-inline: 24px;
-  width: 100%; 
+  width: 100%;
 }
-
-
-
-
 
 header {
   background-color: var(--color-header-bg);
@@ -119,7 +115,7 @@ header .header-page .box-text .scroll {
   padding-block: 14px;
 }
 
-footer .box-rodape{
+footer .box-rodape {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -388,27 +384,32 @@ main .brindes .box-content .box-brindes-descripion .box-text-descripion a {
   transition: all 0.3s ease;
 }
 
-main .brindes .box-content .box-brindes-descripion .box-text-descripion a:hover {
+main
+  .brindes
+  .box-content
+  .box-brindes-descripion
+  .box-text-descripion
+  a:hover {
   background-color: #be90f5;
   color: var(--color-white);
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0px 4px 10px #be90f566; 
+  box-shadow: 0px 4px 10px #be90f566;
 }
 
-main .formulario{
+main .formulario {
   background-color: #2d2d2d;
   padding-block: 60px;
 }
 
-main .formulario .secao-formulario .imagem-contato{
-  background-image: url('./assets/img/fale-conosco.svg');
+main .formulario .secao-formulario .imagem-contato {
+  background-image: url("./assets/img/fale-conosco.svg");
   height: 300px;
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
 }
 
-main .formulario .secao-formulario{
+main .formulario .secao-formulario {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -416,52 +417,55 @@ main .formulario .secao-formulario{
   border-bottom: 1px solid var(--color-primary);
   padding-bottom: 60px;
   gap: 30px;
- 
 }
 
-main .formulario .secao-formulario .box-formulario{
-width:180vw;
-background-color: var(--color-brindes-bg);
-border-radius: 20px;
-padding: 30px;
-
+main .formulario .secao-formulario .box-formulario {
+  width: 180vw;
+  background-color: var(--color-brindes-bg);
+  border-radius: 20px;
+  padding: 30px;
 }
 
-main .formulario .secao-formulario .box-formulario h3{
+main .formulario .secao-formulario .box-formulario h3 {
   font-size: 36px;
   color: #2d2d2d;
   margin-bottom: 10px;
 }
 
-main .formulario .secao-formulario .box-formulario p{
+main .formulario .secao-formulario .box-formulario p {
   font-size: 22px;
   color: #2d2d2d;
   margin-bottom: 10px;
 }
 
-main .formulario .secao-formulario .box-formulario strong{
+main .formulario .secao-formulario .box-formulario strong {
   font-size: 14px;
   color: #2d2d2d;
-
 }
 
-main .formulario .secao-formulario .box-formulario .form-contato .inputs{
+main .formulario .secao-formulario .box-formulario .form-contato .inputs {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px; 
+  gap: 10px;
   margin-top: 10px;
   margin-bottom: 30px;
 }
 
 main .formulario .secao-formulario .box-formulario .form-contato .inputs input,
-main .formulario .secao-formulario .box-formulario .form-contato .box-verificacao input{
+main
+  .formulario
+  .secao-formulario
+  .box-formulario
+  .form-contato
+  .box-verificacao
+  input {
   padding: 10px;
   outline: none;
   border: none;
   border-radius: 7px;
 }
 
-main .formulario .secao-formulario .box-formulario .form-contato button{
+main .formulario .secao-formulario .box-formulario .form-contato button {
   padding: 10px 50px;
   border: none;
   background-color: var(--color-primary);
@@ -476,63 +480,89 @@ main .formulario .secao-formulario .box-formulario .form-contato button{
 
 main .formulario .secao-formulario .box-formulario .form-contato button:hover {
   background-color: #be90f5;
-  color: var(--color-white); 
-  transform: scale(1.1); 
+  color: var(--color-white);
+  transform: scale(1.1);
   box-shadow: 0px 4px 15px #be90f566;
 }
 
-main .formulario .secao-formulario .box-formulario .form-contato .container-resultado .box-verificacao{
+main
+  .formulario
+  .secao-formulario
+  .box-formulario
+  .form-contato
+  .container-resultado
+  .box-verificacao {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-main .formulario .secao-formulario .box-formulario .form-contato .container-resultado .box-verificacao .soma{
+main
+  .formulario
+  .secao-formulario
+  .box-formulario
+  .form-contato
+  .container-resultado
+  .box-verificacao
+  .soma {
   display: flex;
   padding-inline: 20px;
   gap: 20px;
   border-radius: 7px;
-  background-color: var(--color-brindes-bg);  
+  background-color: var(--color-brindes-bg);
 }
-main .formulario .secao-formulario .box-formulario .form-contato .container-resultado .box-verificacao .soma .num{
+main
+  .formulario
+  .secao-formulario
+  .box-formulario
+  .form-contato
+  .container-resultado
+  .box-verificacao
+  .soma
+  .num {
   color: var(--color-highlight);
   font-weight: bold;
 }
-main .formulario .secao-formulario .box-formulario .form-contato .container-resultado .box-verificacao .soma p{
+main
+  .formulario
+  .secao-formulario
+  .box-formulario
+  .form-contato
+  .container-resultado
+  .box-verificacao
+  .soma
+  p {
   margin-top: 10px;
 }
 
-main .formulario .secao-formulario .box-formulario .form-contato h4{
+main .formulario .secao-formulario .box-formulario .form-contato h4 {
   font-size: 24px;
   color: #2d2d2d;
 }
 
-
-
-footer{
+footer {
   background-color: #2d2d2d;
   padding-bottom: 40px;
 }
 
-footer .box-rodape .social-medias a{
+footer .box-rodape .social-medias a {
   color: #eae8e4;
   font-size: 32px;
   margin-inline: 14px;
 }
 
-footer .box-rodape strong{
+footer .box-rodape strong {
   font-size: 18px;
   color: #eae8e4;
   margin-top: 24px;
   margin-bottom: 14px;
 }
 
-footer .box-rodape .nav-rodape ul{
+footer .box-rodape .nav-rodape ul {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   align-items: center;
 }
-footer .box-rodape .nav-rodape ul li a{
+footer .box-rodape .nav-rodape ul li a {
   color: #eae8e4;
 }
-
