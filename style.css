@@ -69,9 +69,6 @@ header .box-menu .menu-icon i {
   color: var(--color-header-text);
   font-size: 30px;
 }
-header .header-page .box-menu .nav-menu{
-  margin-top: 15px;
-}
 
 header .header-page .box-menu .nav-menu ul {
   display: flex;
