@@ -9,6 +9,24 @@ function toggleMenu() {
   }
 }
 
+const sections = document.querySelectorAll(".view-scroll")
+document.addEventListener("scroll", function(){
+  sections.forEach((sections) => {
+    if(view(sections)){
+      sections.classList.add("view-scroll-visible");
+    }
+  })
+})
+
+function view(element){
+  const rect = element.getBoundingClientRect();
+  return rect.bottom > 0 &&
+  rect.top <
+  (window.innerHeight - 150 || document.documentElement.clientHeight -150)
+}
+
+
+
 function openModal(imageSrc, title, description) {
   document.getElementById("modal-cards").style.display = "flex";
   document.getElementById("modal-image").src = imageSrc;

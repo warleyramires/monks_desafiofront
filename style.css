@@ -26,12 +26,27 @@ body {
   background-color: var(--color-body-bg);
 }
 
+.view-scroll{
+  transform:  translateY(20px);
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.view-scroll-visible{
+  transform:  translateY(0);
+  opacity: 1;
+}
+
 .width-page {
   max-width: 1360px;
   margin: 0 auto;
   padding-inline: 24px;
-  width: 100%;
+  width: 100%; 
 }
+
+
+
+
 
 header {
   background-color: var(--color-header-bg);
@@ -108,6 +123,7 @@ footer .box-rodape{
   display: flex;
   align-items: center;
   flex-direction: column;
+  z-index: 9999;
 }
 
 main .turismo {
