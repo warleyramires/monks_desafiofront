@@ -53,6 +53,7 @@ header .box-menu {
 
   position: relative;
   height: 70px;
+  border: 1px solid blue;
 }
 
 header .box-menu .menu-icon {
@@ -67,6 +68,9 @@ header .box-menu .logo {
 header .box-menu .menu-icon i {
   color: var(--color-header-text);
   font-size: 30px;
+}
+header .header-page .box-menu .nav-menu{
+  margin-top: 15px;
 }
 
 header .header-page .box-menu .nav-menu ul {
